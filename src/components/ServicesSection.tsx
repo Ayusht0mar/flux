@@ -6,15 +6,15 @@ const ServicesSection = () => {
                 <SectionHeading heading="SERVICES"/>
                 <div className="grid grid-cols-2 w-[90vw] mx-auto mt-20 gap-20">
                     <p className="text-white text-xl">
-                        Our goal is to understand our client's unique needs and tailor our approach to exceed their expectations. We pride ourselves on building long-term relationships with our clients and working closely with them to achieve their business objectives.
+                        Our goal is to understand our client&apos;s unique needs and tailor our approach to exceed their expectations. We pride ourselves on building long-term relationships with our clients and working closely with them to achieve their business objectives.
                         <br />
                         <br />
-                        We believe in pushing the boundaries of what's possible in advertising. We stay on top of industry trends and are constantly exploring new and emerging technologies to help our clients stand out.
+                        We believe in pushing the boundaries of what&apos;s possible in advertising. We stay on top of industry trends and are constantly exploring new and emerging technologies to help our clients stand out.
                     </p>
                     <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 text-[#E5E5E5]">
                     <div className="p-6 bg-[#3D3D3D] shadow-lg rounded-md">
                         <h3 className="text-xl font-semibold">Brand Creation</h3>
-                        <p>The technology must be invisible to the user’s eyes. Think mobile first.</p>
+                        <p>The technology must be invisible to the user&apos;s eyes. Think mobile first.</p>
                     </div>
                     <div className="p-6 bg-[#3D3D3D] shadow-lg rounded-md">
                         <h3 className="text-xl font-semibold">Digital Marketing</h3>
