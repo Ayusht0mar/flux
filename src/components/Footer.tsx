@@ -4,7 +4,7 @@ const Footer = () => {
     return ( 
         <footer className="border-t border-[#8E98A8] ">
             <div className="w-[90vw] mx-auto grid grid-cols-4 justify-items-center py-10 pb-20">
-                <div>
+                <div className='col-span-2 w-full'>
                     <h1 className="text-3xl font-bold">FLUX</h1>
                     <p>Translating your thoughts and visions</p>
                 </div>
@@ -22,7 +22,7 @@ const Footer = () => {
                     <div>
                         <h5 className="font-semibold">Contact</h5>
                         <ul className="flex flex-col gap-2 mt-3">
-                            <li>+91 7383481249</li>
+                            <li>+91 9x9x9x9x9x</li>
                             <li>hi@flux.in</li>
                         </ul>
                     </div>
@@ -45,12 +45,6 @@ const Footer = () => {
                                 </a>
                             </li>
                         </ul>
-                    </div>
-                </div>
-                <div>
-                    <h5 className="font-semibold">Quick links</h5>
-                    <div className="bg-gray-500">
-
                     </div>
                 </div>
             </div>
