@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 const HeroArea = () => {
     return ( 
         <section className="relative mx-auto w-[90vw] bg-black text-white py-16">
