@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const HeroArea = () => {
     return ( 
         <section className="relative mx-auto w-[90vw] bg-black text-white py-16">
@@ -13,8 +15,15 @@ const HeroArea = () => {
                     </div>
                 </div>
             </div>
-            <div className="mt-10 grid grid-cols-3 gap-4 bg-gray-600 w-full rounded-2xl aspect-[4/1]">
-            
+            <div className="mt-10  w-full rounded-2xl aspect-[4/1]">
+            <Image
+                src="/heroimg.png"
+                alt="Hero Img"
+                width={1000}
+                height={1000}
+                className="w-full"
+            />
+
             </div>
       </section>
      );
