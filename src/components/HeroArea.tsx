@@ -15,7 +15,7 @@ const HeroArea = () => {
                     </div>
                 </div>
             </div>
-            <div className="mt-10  w-full rounded-2xl aspect-[4/1]">
+            <div className="mt-10 w-full rounded-2xl aspect-[4/1]">
             <Image
                 src="/heroimg.png"
                 alt="Hero Img"
@@ -23,7 +23,6 @@ const HeroArea = () => {
                 height={1000}
                 className="w-full"
             />
-
             </div>
       </section>
      );
