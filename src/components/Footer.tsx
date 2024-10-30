@@ -1,12 +1,18 @@
 import { Facebook, Instagram, Twitter } from 'lucide-react';
+import Image from 'next/image';
 
 const Footer = () => {
     return ( 
         <footer className="border-t border-[#8E98A8] ">
             <div className="w-[90vw] mx-auto grid grid-cols-4 justify-items-center py-10 pb-20">
                 <div className='col-span-2 w-full'>
-                    <h1 className="text-3xl font-bold">FLUX</h1>
-                    <p>Translating your thoughts and visions</p>
+                    <Image
+                        src="/logo.svg"
+                        alt="logo"
+                        width={32}
+                        height={48}
+                    />
+                    <p className='mt-2'>Translating your thoughts and visions</p>
                 </div>
                 <div>
                     <h5 className="font-semibold">Quick links</h5>
