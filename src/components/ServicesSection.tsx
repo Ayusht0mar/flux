@@ -4,8 +4,8 @@ const ServicesSection = () => {
     return ( 
             <section id="services" className="py-16 text-black">
                 <SectionHeading heading="SERVICES"/>
-                <div className="grid grid-cols-2 w-[90vw] mx-auto mt-20 gap-20">
-                    <p className="text-white text-xl mt-8">
+                <div className="flex flex-col lg:grid grid-cols-2 w-[90vw] mx-auto mt-20 gap-20">
+                    <p className="text-white text-lg lg:text-xl mt-8">
                         Our goal is to understand our client&apos;s unique needs and tailor our approach to exceed their expectations. We pride ourselves on building long-term relationships with our clients and working closely with them to achieve their business objectives.
                         <br />
                         <br />
