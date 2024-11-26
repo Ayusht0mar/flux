@@ -1,4 +1,3 @@
-import Image from "next/image";
 import SectionHeading from "./SectionHeading";
 import AutomaticMovingLogoSlider from "./AutomaticMovingLogoSlider";
 

@@ -1,8 +1,7 @@
 "use client"
 import Image from "next/image";
-import { useAnimation, motion, AnimatePresence } from "motion/react";
-import { Dribbble, Github, Twitter } from "lucide-react";
-import { useEffect, useState } from "react";
+import { useAnimation, motion, AnimatePresence, AnimationControls } from "motion/react";
+import { useEffect, useState, useMemo } from "react";
 
 
 const Header = () => {
@@ -38,18 +37,22 @@ export default Header;
 const NavMenu = () => {
     const [menuOpen, setMenuOpen] = useState(false);
 
-    const path1Controls = useAnimation();
-    const path2Controls = useAnimation();
+    const path1Controls:AnimationControls = useAnimation();
+    const path2Controls:AnimationControls = useAnimation();
 
-    const path1Variants = {
+    const path1Variants = useMemo(
+        () => ({
         open: {d: "M3.06061 2.99999L21.0606 21"},
         closed: {d: "M0 8.5L24 8.5"},
-    }
+    }),
+    []
+);
 
-    const path2Variants = {
+    const path2Variants = useMemo(
+        () => ({
         open: {d: "M3.00006 21.0607L21 3.06064"},
         closed: {d: "M0 15.5L24 15.5"},
-    }
+    }), []);
 
     useEffect(() => {
         if (menuOpen) {
@@ -59,7 +62,7 @@ const NavMenu = () => {
             path1Controls.start(path1Variants.closed)
             path2Controls.start(path2Variants.closed)
         }
-    }, [menuOpen]);
+    }, [menuOpen, path1Controls, path2Controls, path1Variants, path2Variants]);
 
 
     return (

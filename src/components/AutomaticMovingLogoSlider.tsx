@@ -15,15 +15,14 @@ const AutomaticMovingLogoSlider = () => {
         "/logos/6.svg",
     ]
 
-    let [ ref, {width}] = useMeasure()
+    const [ ref, {width}] = useMeasure()
 
     const xTranslation = useMotionValue(0);
 
     useEffect(() => {
-        let controls;
-        let finalPosition = -width / 2 - 4;
+        const finalPosition = -width / 2 - 4;
 
-        controls = animate(xTranslation, [0, finalPosition], {
+        const controls = animate(xTranslation, [0, finalPosition], {
             ease: "linear",
             duration: 10,
             repeat: Infinity,
